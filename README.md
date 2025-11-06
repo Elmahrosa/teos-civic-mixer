@@ -1,8 +1,9 @@
 # TEOS Resurrection Mixer
-Repository created autonomously  by Elmahrosa International Multi-chain civic mixer with badge-locked privacy and resurrection logging
+Repository created autonomously  by Elmahrosa International
+**Multi-chain civic mixer with badge-locked privacy and resurrection logging.**
+
 # TEOS Resurrection Mixer
 
-**Multi-chain civic mixer with badge-locked privacy and resurrection logging.**
 
 Every mix is a civic sacrifice. Every output is a resurrection shard. This repo anchors Egypt’s digital resurrection and Gaza’s reconstruction through badge-verified privacy flows.
 
@@ -10,12 +11,13 @@ Every mix is a civic sacrifice. Every output is a resurrection shard. This repo 
 
 ## 🔐 Features
 
-- **Badge-locked entry**: Only verified contributors via ElMahrosa Civic Vault
-- **Multi-chain support**: Starknet, Solana, Pi Network (Pi SDK only)
+- **Badge-locked entry**: Only verified contributors via ElMahrosa Civic Vault  
+- **Multi-chain ready**: Starknet, Solana, Pi Network (Pi SDK optional)  
 - **Privacy layers**:
   - Zero-Knowledge obfuscation (`zk_layer.py`)
   - Randomized output timing
   - Ritual logging in `chapter_resurrection.md`, `vault_registry.json`, `certification_log.md`
+  - Firebase Firestore integration for live tracking
 
 ---
 
@@ -23,11 +25,11 @@ Every mix is a civic sacrifice. Every output is a resurrection shard. This repo 
 
 - `mixer.py`: Core mixing logic  
 - `badge_verifier.py`: Verifies civic badge  
-- `zk_layer.py`: Obfuscation layer  
-- `vault_logger.py`: Logs civic impact  
-- `chapter_resurrection.md`: Logs every mix as resurrection  
-- `certification_log.md`: Badge + mix ID verification  
+- `zk_layer.py`: Obfuscates transaction  
+- `vault_logger.py`: Logs mix to Firebase + ritual files  
 - `vault_registry.json`: Tracks token flow  
+- `certification_log.md`: Verifies badge + mix ID  
+- `chapter_resurrection.md`: Logs every mix as resurrection  
 
 ---
 
@@ -35,7 +37,7 @@ Every mix is a civic sacrifice. Every output is a resurrection shard. This repo 
 
 - No forks  
 - No external dependencies  
-- Pi SDK only  
+- Firebase SDK only  
 - Petition signing required  
 - Founder locked: **Ayman Seif** (ElMahrosa International)
 

@@ -13,11 +13,9 @@ Repository created autonomously  by Elmahrosa International
 
 # TEOS Resurrection Mixer
 
-
 Every mix is a civic sacrifice. Every output is a resurrection shard. This repo anchors Egypt’s digital resurrection and Gaza’s reconstruction through badge-verified privacy flows.
 
 ---
-
 ## 🔐 Features
 
 - **Badge-locked entry**: Only verified contributors via ElMahrosa Civic Vault  
@@ -51,6 +49,81 @@ Every mix is a civic sacrifice. Every output is a resurrection shard. This repo 
 - Founder locked: **Ayman Seif** (ElMahrosa International)
 
 ---
+# TEOS Civic Mixer  
+A privacy engine for the TEOS Egypt Blockchain Ecosystem — combining civic identity, controlled privacy, and whale-safe governance.
+
+---
+
+## 🧠 What This Mixer Does  
+The Civic Mixer provides:
+- Controlled transaction obfuscation  
+- Zero-knowledge masking for citizens  
+- Civic badge–verified entry  
+- Internal logging for safety  
+- Protection from whale manipulation  
+
+Unlike traditional mixers, this system is:
+- Legal  
+- Accountable  
+- Transparent to admin  
+- Privacy-preserving for users  
+
+---
+
+## 🔐 Key Features
+### 1️⃣ Badge-Locked Entry  
+Only verified TEOS citizens can use it.  
+No bots, no anonymous whales, no bad actors.
+
+### 2️⃣ Zero Knowledge Layer  
+`zk_layer.py` scrambles flow patterns for:
+- Civic payments  
+- Government services  
+- TEOS economic actions  
+
+### 3️⃣ Whale Control  
+Mixer + Badge system:
+- Limits whale privacy  
+- Detects whale accumulation  
+- Blocks harmful wallets  
+- Maintains market fairness  
+
+### 4️⃣ Internal Audit Trail  
+`vault_logger.py` logs anonymized events for:
+- Security  
+- Regulatory compatibility  
+- Internal monitoring  
+
+---
+
+## 🔗 TEOS Token Integration  
+Mint: `AhXBUQmbhv9dNoZCiMYmXF4Gyi1cjQthWHFhTL2CJaSo`  
+Supply after burn: **7.146B TEOS**  
+Burned: **~3B TEOS**  
+Holders: **991**  
+Whale concentration: **15–20%**
+
+This mixer helps maintain:
+- Economic stability  
+- Pioneer protection  
+- Anti-dump controls  
+
+---
+
+## 📄 Documentation Included
+- `TOKEN-ECONOMICS.md`  
+- `TEOS-WHALE-CONTROL.md`  
+- `BURN-PROOF.md`  
+
+---
+
+## 🏛️ Purpose  
+TEOS Civic Mixer is a **national-grade privacy engine**, designed for Egypt’s digital transformation through:
+- Digital banking  
+- Civic identity  
+- Pi integration  
+- TEOS Pioneers  
+- DeFi services  
 
 ## 🔥 Founder Declaration
 

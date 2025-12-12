@@ -38,7 +38,6 @@
     "@radix-ui/react-toggle-group": "1.1.11",
     "@radix-ui/react-tooltip": "1.2.8",
     "@vercel/analytics": "1.6.1",
-
     "autoprefixer": "10.4.22",
     "class-variance-authority": "0.7.1",
     "clsx": "2.1.1",
@@ -47,14 +46,11 @@
     "embla-carousel-react": "8.6.0",
     "geist": "1.5.1",
     "input-otp": "1.4.2",
-
     "lucide-react": "0.561.0",
-
-    "next": "16.0.10",               // FIX FOR CVE-2025-66478
+    "next": "16.0.10",
     "next-themes": "0.4.6",
     "react": "19.2.3",
     "react-dom": "19.2.3",
-
     "react-day-picker": "9.12.0",
     "react-hook-form": "7.68.0",
     "react-resizable-panels": "3.0.6",

@@ -1,5 +1,7 @@
 # TEOS Resurrection Mixer
 Repository created autonomously  by Elmahrosa International
+“Part of the TEOS Egypt Blockchain Ecosystem — a comprehensive decentralized infrastructure integrating civil systems, financial services, and smart-city technologies to support digital banking, civic governance, decentralized finance (DeFi), Pi Network integration, and nationwide blockchain-based services.”
+
 ## 🛑 PROPRIETARY & CONFIDENTIAL — TEOS EGYPT
 [![Strictly Proprietary](https://img.shields.io/badge/Strictly%20Proprietary-TEOS%20Sovereign%20License-ff0000?style=for-the-badge)](https://github.com/Elmahrosa/Teos-Pharaoh-Portal/blob/main/TESL.md)
 

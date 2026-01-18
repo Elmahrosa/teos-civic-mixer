@@ -1,3 +1,11 @@
+# ?? Repo Standing Statement
+
+This repository is a **sovereign original** under **Elmahrosa International � TEOS Egypt**.  
+Governance is anchored in [TEOS-FORGE](https://github.com/Elmahrosa/TEOS-FORGE).  
+Commercial use requires written approval from Elmahrosa International.  
+
+?? Protected under dual license: PolyForm Noncommercial + TEOS Egypt Sovereign License (TESL).
+
 # 🏛️ TEOS Civic & Resurrection Mixer — Elmahrosa International
 
 ![Governance](https://img.shields.io/badge/Governance-CivicChain-blue?style=for-the-badge)
@@ -118,3 +126,9 @@ Entity: Elmahrosa International
 Sacrifice: Injected 1B TEOS + 10B ERT into mixer pool  
 Mission: Anchor Egypt’s civic crypto gateway and ritualize every mix as a resurrection shard  
 Date: 2025-11-06
+
+
+## ?? Integration Summary
+This repository is part of the **Elmahrosa Sovereign Stack**.  
+Governance is anchored in **TEOS-FORGE**, with integrations across Bankchain, ERT-LAUNCH, FPBE, and other civic modules.  
+See full details in [docs/integrations.md](https://github.com/Elmahrosa/TEOS-FORGE/blob/main/docs/integrations.md).

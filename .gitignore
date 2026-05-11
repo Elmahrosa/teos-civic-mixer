@@ -2,3 +2,5 @@ __pycache__/
 *.pyc
 firebase_credentials.json
 
+.next/
+node_modules/

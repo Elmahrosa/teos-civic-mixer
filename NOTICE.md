@@ -16,7 +16,7 @@ Use of this software is governed by a **dual-license model**:
 ## TESL References
 
 - **Canonical source (single source of truth):**  
-  https://github.com/Elmahrosa/Teos-Pharaoh-Portal/blob/main/TESL.md
+  https://github.com/Elmahrosa/teos-international-civic-blockchain-constitution/blob/main/LICENSE.md
 
 - **Local mirror (if present):**  
   /LICENSES/TESL.md

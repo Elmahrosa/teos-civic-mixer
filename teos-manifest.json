@@ -1,11 +1,22 @@
 ﻿{
-    "status":  "development",
-    "governance":  {
-                       "framework":  "TEOS-FORGE-GLOBAL",
-                       "compliance_standard":  "Universal-DPI"
-                   },
-    "project":  "Teos-Civic-Mixer",
-    "version":  "1.0.0",
-    "organization":  "Elmahrosa",
-    "registry":  "https://github.com/Elmahrosa/elmahrosa-core.git"
+  "schema": "teos.manifest.v1",
+  "name": "Teos-Civic-Mixer",
+  "repo": "Elmahrosa/Teos-Civic-Mixer",
+  "role": "Module",
+  "status": "development",
+  "version": "1.0.0",
+  "authority": {
+    "icbc": "https://github.com/Elmahrosa/teos-international-civic-blockchain-constitution",
+    "tesl_canonical": "https://github.com/Elmahrosa/teos-international-civic-blockchain-constitution/blob/main/LICENSE.md"
+  },
+  "stewardship": {
+    "teos_forge": "https://github.com/Elmahrosa/TEOS-FORGE",
+    "kernel": "https://github.com/Elmahrosa/elmahrosa-core"
+  },
+  "compliance": {
+    "jurisdictions": ["EG"],
+    "data_sensitivity": "public",
+    "controls": ["ICBC", "TESL_CANONICAL", "BRANCH_PROTECTION"]
+  },
+  "contacts": { "owner": "Ayman Seif", "security": "ayman@teosegypt.com" }
 }

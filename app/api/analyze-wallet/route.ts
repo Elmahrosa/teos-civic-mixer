@@ -40,6 +40,7 @@ export async function GET(request: NextRequest) {
   if (existing) {
     return NextResponse.json({
       tool: "teos-civic-risk-scanner",
+      mock: true,
       wallet: existing.address,
       analysis: {
         ownership_percentage: existing.percentage,
@@ -65,6 +66,7 @@ export async function GET(request: NextRequest) {
 
   return NextResponse.json({
     tool: "teos-civic-risk-scanner",
+    mock: true,
     wallet: newWallet.address,
     analysis: {
       ownership_percentage: Number(percentage.toFixed(2)),

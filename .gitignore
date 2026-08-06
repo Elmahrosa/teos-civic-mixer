@@ -3,3 +3,4 @@ __pycache__/
 firebase_credentials.json
 .next/
 node_modules/
+*.lock

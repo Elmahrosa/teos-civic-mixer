@@ -15,16 +15,12 @@ class FakeFirestoreCollection:
 
 
 class FakeFirestore:
-    def client(self, app=None):
-        return self
-
     def collection(self, name):
         return FakeFirestoreCollection()
 
 
 def test_log_mix_writes_registry_and_cert_log(tmp_path, monkeypatch):
-    monkeypatch.setattr(vault_logger, "firestore", FakeFirestore())
-    monkeypatch.setattr(vault_logger, "_get_firebase_app", lambda: object())
+    monkeypatch.setattr(vault_logger, "_get_db", lambda: FakeFirestore())
     monkeypatch.chdir(tmp_path)
 
     vault_logger.log_mix("MIX-abc123", "ElMahrosa-verified", "TEOS", 100)
@@ -42,8 +38,7 @@ def test_log_mix_writes_registry_and_cert_log(tmp_path, monkeypatch):
 
 
 def test_log_mix_appends_second_entry(tmp_path, monkeypatch):
-    monkeypatch.setattr(vault_logger, "firestore", FakeFirestore())
-    monkeypatch.setattr(vault_logger, "_get_firebase_app", lambda: object())
+    monkeypatch.setattr(vault_logger, "_get_db", lambda: FakeFirestore())
     monkeypatch.chdir(tmp_path)
 
     vault_logger.log_mix("MIX-1", "ElMahrosa-verified", "TEOS", 10)

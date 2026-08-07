@@ -2,17 +2,17 @@ import json
 import os
 from datetime import datetime, timedelta, timezone
 
-import firebase_admin
-from firebase_admin import credentials, firestore
-
 CREDENTIALS_FILE = "firebase_credentials.json"
 
 _firebase_app = None
+
 
 def _get_firebase_app():
     global _firebase_app
     if _firebase_app is not None:
         return _firebase_app
+    import firebase_admin
+    from firebase_admin import credentials
     if not os.path.exists(CREDENTIALS_FILE):
         raise FileNotFoundError(
             f"Firebase credentials file '{CREDENTIALS_FILE}' is missing. "
@@ -23,6 +23,7 @@ def _get_firebase_app():
     _firebase_app = firebase_admin.initialize_app(cred)
     return _firebase_app
 
+
 def _lock_file(path):
     lock_path = path + ".lock"
     fd = os.open(lock_path, os.O_CREAT | os.O_RDWR)
@@ -30,6 +31,7 @@ def _lock_file(path):
     try:
         if os.name == "nt":
             import msvcrt
+            os.lseek(fd, 0, os.SEEK_SET)
             msvcrt.locking(fd, msvcrt.LK_LOCK, 1)
         else:
             import fcntl
@@ -38,6 +40,7 @@ def _lock_file(path):
     except Exception:
         os.close(fd)
         raise
+
 
 def _unlock_file(fd):
     try:
@@ -50,6 +53,12 @@ def _unlock_file(fd):
             fcntl.flock(fd, fcntl.LOCK_UN)
     finally:
         os.close(fd)
+
+
+def _get_db():
+    from firebase_admin import firestore
+    return firestore.client(_get_firebase_app())
+
 
 def log_mix(mix_id, badge_id, token_type, amount, receipt_hash=None):
     cairo_tz = timezone(timedelta(hours=2))
@@ -65,7 +74,7 @@ def log_mix(mix_id, badge_id, token_type, amount, receipt_hash=None):
     if receipt_hash:
         mix_entry["receipt_hash"] = receipt_hash
 
-    db = firestore.client(_get_firebase_app())
+    db = _get_db()
     db.collection("resurrection_mixes").document(mix_id).set(mix_entry)
 
     fd = _lock_file("vault_registry.json")
@@ -82,7 +91,16 @@ def log_mix(mix_id, badge_id, token_type, amount, receipt_hash=None):
         _unlock_file(fd)
 
     with open("certification_log.md", "a", encoding="utf-8") as f:
-        f.write(f"\n## {mix_id}\n- Badge: {badge_id}\n- Token: {token_type}\n- Amount: {amount}\n- Timestamp: {timestamp}\n- Status: Verified\n")
+        f.write(
+            f"\n## {mix_id}\n"
+            f"- Badge: {badge_id}\n- Token: {token_type}\n- Amount: {amount}\n"
+            f"- Timestamp: {timestamp}\n- Status: Verified\n"
+        )
 
     with open("chapter_resurrection.md", "a", encoding="utf-8") as f:
-        f.write(f"\n- Mix ID: {mix_id}\n  - Token: {token_type}\n  - Amount: {amount}\n  - Badge: {badge_id}\n  - Timestamp: {timestamp}\n  - Status: Logged\n")
+        f.write(
+            f"\n- Mix ID: {mix_id}\n"
+            f"  - Token: {token_type}\n  - Amount: {amount}\n"
+            f"  - Badge: {badge_id}\n  - Timestamp: {timestamp}\n"
+            f"  - Status: Logged\n"
+        )

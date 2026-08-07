@@ -27,8 +27,8 @@ const translations = {
     "nav.admin": "Admin",
 
     // Home
-    "home.hero.title": "Secure Civic Privacy Mixer",
-    "home.hero.subtitle": "Badge-verified privacy transactions for Egypt's digital transformation",
+    "home.hero.title": "Secure Civic Governance",
+    "home.hero.subtitle": "Badge-verified transparency and accountability for Egypt's digital transformation",
     "home.stats.holders": "Holders",
     "home.stats.supply": "Supply",
     "home.stats.burned": "Burned",
@@ -113,8 +113,8 @@ const translations = {
     "nav.admin": "الإدارة",
 
     // Home
-    "home.hero.title": "خلاط الخصوصية المدنية الآمن",
-    "home.hero.subtitle": "معاملات خاصة موثقة بالشارات للتحول الرقمي في مصر",
+    "home.hero.title": "الحوكمة المدنية الآمنة",
+    "home.hero.subtitle": "شفافية ومساءلة موثقة بالشارات للتحول الرقمي في مصر",
     "home.stats.holders": "الحائزون",
     "home.stats.supply": "الإمداد",
     "home.stats.burned": "محروق",

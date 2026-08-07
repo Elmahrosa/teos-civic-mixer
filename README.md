@@ -18,11 +18,11 @@ Commercial use requires written approval from Elmahrosa International.
 ---
 
 ## 🌍 Overview
-The **Civic & Resurrection Mixer** is Egypt’s sovereign governance and privacy engine.  
+The **Civic & Resurrection Mixer** is Egypt’s sovereign governance and accountability engine.  
 It anchors **digital resurrection** and **civic governance** through badge‑verified flows, ensuring:
 - Secure voting and referenda  
 - Transparent public records  
-- Controlled privacy for citizens  
+- Badge‑verified accountability for citizens  
 - Whale‑safe governance and market fairness  
 - Ritualized logging of every mix as a **resurrection shard**  
 

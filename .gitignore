@@ -4,3 +4,4 @@ firebase_credentials.json
 .next/
 node_modules/
 *.lock
+*.tsbuildinfo

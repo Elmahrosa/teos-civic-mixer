@@ -30,14 +30,14 @@ If a whale becomes harmful:
 
 ---
 
-### 2️⃣ Teos Civic Mixer (Controlled Privacy)
+### 2️⃣ Teos Civic Mixer (Accountable Transparency)
 Mixer logs allow TEOS authority to:
 - Track whale flows internally  
 - Spot accumulation patterns  
 - Prevent hidden dumping  
-- Block suspicious mixers  
+- Flag suspicious transactions  
 
-This is privacy **with accountability**.
+This is accountability **through transparency**.
 
 ---
 
@@ -46,7 +46,7 @@ Internal system:
 - Tracks supply concentration  
 - Whales movement alerts  
 - Detects pattern-based threats  
-- Observes mixer entry/exit  
+- Observes mixer log entries  
 
 ---
 
